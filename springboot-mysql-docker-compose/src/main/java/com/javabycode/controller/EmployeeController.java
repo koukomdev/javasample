@@ -36,6 +36,8 @@ public class EmployeeController {
 		if(val) {
 			System.out.println(val);
 		}
+		List<String> list = new ArrayList<>(map.values());
+		System.out.println(list.get(1000));
 		return employeeRepository.findAll();
 	}
 
