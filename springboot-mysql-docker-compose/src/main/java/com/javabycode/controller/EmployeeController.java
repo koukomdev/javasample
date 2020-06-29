@@ -32,6 +32,10 @@ public class EmployeeController {
 		Map<String, String> map = new HashMap<>();
 		map.put("samurai", "hoge");
 		map.put("engineer", "moge");
+		String val = map.get("samurai");
+		if(val) {
+			System.out.println(val);
+		}
 		return employeeRepository.findAll();
 	}
 
