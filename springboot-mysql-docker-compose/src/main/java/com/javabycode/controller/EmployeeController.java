@@ -29,6 +29,9 @@ public class EmployeeController {
 
 	@GetMapping("/employees")
 	public List<Employee> getAllEmployees() {
+		Map<String, String> map = new HashMap<>();
+		map.put("samurai", "hoge");
+		map.put("engineer", "moge");
 		return employeeRepository.findAll();
 	}
 
