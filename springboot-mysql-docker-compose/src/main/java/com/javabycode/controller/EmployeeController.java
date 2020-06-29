@@ -24,6 +24,9 @@ import com.javabycode.repository.EmployeeRepository;
 @RestController
 @RequestMapping("/docker-api")
 public class EmployeeController {
+	
+	public int sugoi_hensu = 1;
+	
 	@Autowired
 	private EmployeeRepository employeeRepository;
 
